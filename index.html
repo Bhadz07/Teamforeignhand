@@ -3,6 +3,7 @@
   <head>
 
 
+
 <script>
     var url = new URL(window.location.href);
     var pci = url.searchParams.get('clickid');
@@ -17,13 +18,14 @@
             Replace("//n91hg.com/4/9568313?var="+ppi+"&ymid="+pci);break;
             case 'onPermissionDenied':
             Replace("//n91hg.com/4/9568314?var="+ppi+"&ymid="+pci);break;
-            case 'onAlreadySubscribed':
-            Replace("//n91hg.com/4/9568315?var="+ppi+"&ymid="+pci);break;
+            case 'onAlreadySubscribed':break;
             case 'onNotificationUnsupported':break;
         }
     };
     document.head.appendChild(s);
 </script>
+
+
 
 
 
